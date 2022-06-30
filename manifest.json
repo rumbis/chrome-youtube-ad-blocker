@@ -1,20 +1,23 @@
 {
     "manifest_version": 3,
-    "name": "youtube ad skip",
+    "name": "ad block && yt ad skip",
     "description": "extension to skip youtube ads",
     "version": "1.0",
     "content_scripts": [
         {
             "matches": [
+
                 "<all_urls>"
             ],
             "run_at": "document_idle",
             "js": [
                 "index.js"
+
             ]
         }
     ],
     "permissions": [
         "activeTab"
+
     ]
 }
